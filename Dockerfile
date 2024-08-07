@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Specify the command to run the application
-CMD ["python", "calls -la /var/run/docker.sockc.py"]
+CMD ["python", "calc.py"]
