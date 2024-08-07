@@ -22,4 +22,4 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         port: 22
-        script: /docker/deploy_production.sh
+        script: /home/ec2-user/calc/deploy_production.sh
