@@ -15,6 +15,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
+    - name: Show the private key for debugging (remove after debugging)
+      run: echo "${{ secrets.SSH_KEY }}"  
+
     - name: executing remote ssh commands using ssh key
       uses: appleboy/ssh-action@master
       with:
